@@ -27,5 +27,5 @@ public class MessageController {
     public String createNewGarage(@RequestBody Message message){
 		messageService.sendMessage(message);
         return "Message sent";
-    }
+	}
 }
