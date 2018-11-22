@@ -15,7 +15,7 @@ public class MessageListener {
     @RabbitListener(queues = RabbitMQConfig.QUEUE_MESSAGES)
     public void processMessage(Message message) {
         logger.info("Message Received");
-        logger.info("Sebject:" + message.getSubject());
+        logger.info("Subject:" + message.getSubject());
         logger.info("Body:" + message.getBody());
     }
 }
